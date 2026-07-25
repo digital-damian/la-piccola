@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!-- saved from url=(0046)file:///C:/Users/royda/Downloads/index_73.html -->
-<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
@@ -2836,117 +2836,125 @@
     }
   </style>
 </head>
-<body class="menu-active">
+<body class="splash-active">
 
   <!-- ============================================================
        SVG SPRITE GLOBAL (símbolos reutilizables, sin dependencias)
        ============================================================ -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
-      <lineargradient id="flame" x1="32" y1="6" x2="32" y2="40" gradientUnits="userSpaceOnUse">
-        <stop offset="0" stop-color="#ffc400"></stop>
-        <stop offset="0.55" stop-color="#ff5e00"></stop>
-        <stop offset="1" stop-color="#d8241f"></stop>
-      </lineargradient>
+      <linearGradient id="flame" x1="32" y1="6" x2="32" y2="40" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#ffc400"/>
+        <stop offset="0.55" stop-color="#ff5e00"/>
+        <stop offset="1" stop-color="#d8241f"/>
+      </linearGradient>
 
       <symbol id="icon-logo" viewBox="0 0 64 64">
-        <path d="M32 7c2.4 5.2 7.6 8.3 9.8 13.2 2.3 5.1 1 11.4-3.2 14.9 0.4-3.1-0.7-6.2-3-8.2 0.5 4.5-2.3 7.4-5.5 9.3-3.5-2.4-5.7-6.5-5-10.8-1.8 1.5-2.9 3.7-3.1 6-3.3-4-3.6-9.9-0.8-14.3C23.7 12.7 29.5 11 32 7Z" fill="url(#flame)"></path>
-        <line x1="14" y1="46" x2="50" y2="46" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></line>
-        <line x1="18" y1="53" x2="46" y2="53" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" opacity="0.55"></line>
+        <path d="M32 7c2.4 5.2 7.6 8.3 9.8 13.2 2.3 5.1 1 11.4-3.2 14.9 0.4-3.1-0.7-6.2-3-8.2 0.5 4.5-2.3 7.4-5.5 9.3-3.5-2.4-5.7-6.5-5-10.8-1.8 1.5-2.9 3.7-3.1 6-3.3-4-3.6-9.9-0.8-14.3C23.7 12.7 29.5 11 32 7Z" fill="url(#flame)"/>
+        <line x1="14" y1="46" x2="50" y2="46" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="18" y1="53" x2="46" y2="53" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/>
       </symbol>
 
       <symbol id="icon-whatsapp" viewBox="0 0 24 24">
-        <path fill="currentColor" d="M12.04 2C6.56 2 2.1 6.45 2.1 11.93c0 1.75.46 3.46 1.34 4.97L2 22l5.23-1.37a9.93 9.93 0 0 0 4.8 1.22h.01c5.48 0 9.93-4.45 9.93-9.92A9.86 9.86 0 0 0 19.07 4.9 9.87 9.87 0 0 0 12.04 2Zm0 18.17h-.01a8.24 8.24 0 0 1-4.2-1.15l-.3-.18-3.1.81.83-3.03-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.55 3.7-8.25 8.25-8.25 2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.83c0 4.55-3.7 8.24-8.25 8.24Zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42-.14-.01-.31-.01-.47-.01-.17 0-.43.06-.66.31-.22.24-.86.84-.86 2.06 0 1.21.89 2.39 1.01 2.55.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"></path>
+        <path fill="currentColor" d="M12.04 2C6.56 2 2.1 6.45 2.1 11.93c0 1.75.46 3.46 1.34 4.97L2 22l5.23-1.37a9.93 9.93 0 0 0 4.8 1.22h.01c5.48 0 9.93-4.45 9.93-9.92A9.86 9.86 0 0 0 19.07 4.9 9.87 9.87 0 0 0 12.04 2Zm0 18.17h-.01a8.24 8.24 0 0 1-4.2-1.15l-.3-.18-3.1.81.83-3.03-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.55 3.7-8.25 8.25-8.25 2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.83c0 4.55-3.7 8.24-8.25 8.24Zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42-.14-.01-.31-.01-.47-.01-.17 0-.43.06-.66.31-.22.24-.86.84-.86 2.06 0 1.21.89 2.39 1.01 2.55.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/>
       </symbol>
 
       <symbol id="icon-instagram" viewBox="0 0 24 24">
-        <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"></rect>
-        <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
-        <circle cx="17.2" cy="6.8" r="1" fill="currentColor"></circle>
+        <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <circle cx="17.2" cy="6.8" r="1" fill="currentColor"/>
       </symbol>
 
       <symbol id="icon-facebook" viewBox="0 0 24 24">
-        <path fill="currentColor" d="M13.5 21v-7h2.4l.45-3H13.5V9.05c0-.87.28-1.55 1.62-1.55h1.38V4.85c-.66-.07-1.32-.1-1.98-.1-2.07 0-3.52 1.26-3.52 3.58V11H8.5v3H11v7h2.5Z"></path>
+        <path fill="currentColor" d="M13.5 21v-7h2.4l.45-3H13.5V9.05c0-.87.28-1.55 1.62-1.55h1.38V4.85c-.66-.07-1.32-.1-1.98-.1-2.07 0-3.52 1.26-3.52 3.58V11H8.5v3H11v7h2.5Z"/>
       </symbol>
 
       <symbol id="icon-tiktok" viewBox="0 0 24 24">
-        <path fill="currentColor" d="M16.6 3c.35 1.97 1.6 3.46 3.9 3.62v2.78c-1.43.07-2.74-.36-3.9-1.17v5.9c0 4.05-2.86 6.07-5.74 6.07-2.7 0-5.36-1.97-5.36-5.27 0-3.36 2.86-5.42 5.83-5.16v2.9c-.32-.08-.62-.12-.92-.12-1.36 0-2.36.97-2.36 2.34 0 1.5 1.12 2.4 2.4 2.4 1.42 0 2.6-.93 2.6-2.9V3h3.55Z"></path>
+        <path fill="currentColor" d="M16.6 3c.35 1.97 1.6 3.46 3.9 3.62v2.78c-1.43.07-2.74-.36-3.9-1.17v5.9c0 4.05-2.86 6.07-5.74 6.07-2.7 0-5.36-1.97-5.36-5.27 0-3.36 2.86-5.42 5.83-5.16v2.9c-.32-.08-.62-.12-.92-.12-1.36 0-2.36.97-2.36 2.34 0 1.5 1.12 2.4 2.4 2.4 1.42 0 2.6-.93 2.6-2.9V3h3.55Z"/>
       </symbol>
 
       <symbol id="icon-messenger" viewBox="0 0 24 24">
-        <path fill="currentColor" d="M12 2C6.48 2 2.2 6.06 2.2 11.46c0 3.05 1.36 5.68 3.6 7.42v3.34l3.32-1.83c.9.25 1.86.39 2.88.39 5.52 0 9.8-4.06 9.8-9.46S17.52 2 12 2Zm1.05 12.62-2.55-2.7-4.85 2.7 5.3-5.62 2.6 2.7 4.8-2.7-5.3 5.62Z"></path>
+        <path fill="currentColor" d="M12 2C6.48 2 2.2 6.06 2.2 11.46c0 3.05 1.36 5.68 3.6 7.42v3.34l3.32-1.83c.9.25 1.86.39 2.88.39 5.52 0 9.8-4.06 9.8-9.46S17.52 2 12 2Zm1.05 12.62-2.55-2.7-4.85 2.7 5.3-5.62 2.6 2.7 4.8-2.7-5.3 5.62Z"/>
       </symbol>
 
       <symbol id="icon-menu-card" viewBox="0 0 24 24">
-        <path d="M4 4.5h11.5a2 2 0 0 1 2 2V21H6a2 2 0 0 1-2-2V4.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M17.5 8H20v11a2 2 0 0 1-2 2h-0.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
-        <line x1="7.5" y1="9" x2="14" y2="9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></line>
-        <line x1="7.5" y1="13" x2="14" y2="13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></line>
-        <line x1="7.5" y1="17" x2="11.5" y2="17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></line>
+        <path d="M4 4.5h11.5a2 2 0 0 1 2 2V21H6a2 2 0 0 1-2-2V4.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M17.5 8H20v11a2 2 0 0 1-2 2h-0.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="7.5" y1="9" x2="14" y2="9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="7.5" y1="13" x2="14" y2="13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="7.5" y1="17" x2="11.5" y2="17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
       </symbol>
 
       <symbol id="icon-star" viewBox="0 0 24 24">
-        <path fill="currentColor" d="M12 2.6 14.9 8.6l6.5.9-4.7 4.5 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.5l6.5-.9L12 2.6Z"></path>
+        <path fill="currentColor" d="M12 2.6 14.9 8.6l6.5.9-4.7 4.5 1.1 6.4L12 17.4l-5.8 3 1.1-6.4L2.6 9.5l6.5-.9L12 2.6Z"/>
       </symbol>
 
       <symbol id="icon-heart" viewBox="0 0 24 24">
-        <path class="heart-fill" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 20.4S3.5 15.2 3.5 9.3C3.5 6.5 5.7 4.5 8.2 4.5c1.6 0 3 .8 3.8 2.1.8-1.3 2.2-2.1 3.8-2.1 2.5 0 4.7 2 4.7 4.8 0 5.9-8.5 11.1-8.5 11.1Z"></path>
+        <path class="heart-fill" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 20.4S3.5 15.2 3.5 9.3C3.5 6.5 5.7 4.5 8.2 4.5c1.6 0 3 .8 3.8 2.1.8-1.3 2.2-2.1 3.8-2.1 2.5 0 4.7 2 4.7 4.8 0 5.9-8.5 11.1-8.5 11.1Z"/>
       </symbol>
 
       <symbol id="icon-alert" viewBox="0 0 24 24">
-        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3.5 2.8 19.5h18.4L12 3.5Z"></path>
-        <line x1="12" y1="10" x2="12" y2="14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></line>
-        <circle cx="12" cy="17" r="1" fill="currentColor"></circle>
+        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3.5 2.8 19.5h18.4L12 3.5Z"/>
+        <line x1="12" y1="10" x2="12" y2="14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="12" cy="17" r="1" fill="currentColor"/>
       </symbol>
 
       <symbol id="icon-close" viewBox="0 0 24 24">
-        <line x1="5" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
-        <line x1="19" y1="5" x2="5" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+        <line x1="5" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line x1="19" y1="5" x2="5" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
       </symbol>
 
       <symbol id="icon-cart" viewBox="0 0 24 24">
-        <circle cx="9" cy="20" r="1.4" fill="currentColor"></circle>
-        <circle cx="17" cy="20" r="1.4" fill="currentColor"></circle>
-        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 4h2.4l2.2 11.2a1.6 1.6 0 0 0 1.6 1.3h7.9a1.6 1.6 0 0 0 1.6-1.3L20.5 8H6.1"></path>
+        <circle cx="9" cy="20" r="1.4" fill="currentColor"/>
+        <circle cx="17" cy="20" r="1.4" fill="currentColor"/>
+        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 4h2.4l2.2 11.2a1.6 1.6 0 0 0 1.6 1.3h7.9a1.6 1.6 0 0 0 1.6-1.3L20.5 8H6.1"/>
       </symbol>
 
       <symbol id="icon-bag" viewBox="0 0 24 24">
-        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 8h14l-1.1 12.1a1.8 1.8 0 0 1-1.8 1.6H7.9a1.8 1.8 0 0 1-1.8-1.6L5 8Z"></path>
-        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M8.6 10.5V6.4a3.4 3.4 0 0 1 6.8 0v4.1"></path>
+        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+              d="M5 8h14l-1.1 12.1a1.8 1.8 0 0 1-1.8 1.6H7.9a1.8 1.8 0 0 1-1.8-1.6L5 8Z"/>
+        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+              d="M8.6 10.5V6.4a3.4 3.4 0 0 1 6.8 0v4.1"/>
       </symbol>
 
       <symbol id="icon-trash" viewBox="0 0 24 24">
-        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4.5 6.5h15M9.5 6.5V4.8a1.3 1.3 0 0 1 1.3-1.3h2.4a1.3 1.3 0 0 1 1.3 1.3v1.7M6.5 6.5l.9 13a1.7 1.7 0 0 0 1.7 1.6h5.8a1.7 1.7 0 0 0 1.7-1.6l.9-13"></path>
-        <line x1="10" y1="10.5" x2="10" y2="17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></line>
-        <line x1="14" y1="10.5" x2="14" y2="17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></line>
+        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+              d="M4.5 6.5h15M9.5 6.5V4.8a1.3 1.3 0 0 1 1.3-1.3h2.4a1.3 1.3 0 0 1 1.3 1.3v1.7M6.5 6.5l.9 13a1.7 1.7 0 0 0 1.7 1.6h5.8a1.7 1.7 0 0 0 1.7-1.6l.9-13"/>
+        <line x1="10" y1="10.5" x2="10" y2="17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="14" y1="10.5" x2="14" y2="17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
       </symbol>
 
       <symbol id="icon-funnel" viewBox="0 0 24 24">
-        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3.5 5h17l-6.6 7.6v5.2L10.1 20v-7.4L3.5 5Z"></path>
+        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+              d="M3.5 5h17l-6.6 7.6v5.2L10.1 20v-7.4L3.5 5Z"/>
       </symbol>
 
       <symbol id="icon-check" viewBox="0 0 24 24">
-        <path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.5 10 18 19.5 6.5"></path>
+        <path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+              d="M4.5 12.5 10 18 19.5 6.5"/>
       </symbol>
 
       <symbol id="icon-reset" viewBox="0 0 24 24">
-        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 1 1 2.2 5.3M4.5 12V7M4.5 12h5"></path>
+        <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+              d="M4.5 12a7.5 7.5 0 1 1 2.2 5.3M4.5 12V7M4.5 12h5"/>
       </symbol>
 
       <symbol id="icon-cutlery" viewBox="0 0 24 24">
-        <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M7 3v5.2a2.3 2.3 0 0 0 2.3 2.3H9.3M7 3v18M4.7 3v5.2M9.3 3v5.2"></path>
-        <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M17.5 3c-1.7 1.8-2.5 4.4-2.5 7 0 1.7 1 3 2.5 3V21M17.5 3v10"></path>
+        <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+              d="M7 3v5.2a2.3 2.3 0 0 0 2.3 2.3H9.3M7 3v18M4.7 3v5.2M9.3 3v5.2"/>
+        <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+              d="M17.5 3c-1.7 1.8-2.5 4.4-2.5 7 0 1.7 1 3 2.5 3V21M17.5 3v10"/>
       </symbol>
 
       <symbol id="icon-allergen-dot" viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.2"></circle>
-        <line x1="12" y1="7.5" x2="12" y2="13.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"></line>
-        <circle cx="12" cy="16.8" r="1.3" fill="currentColor"></circle>
+        <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.2"/>
+        <line x1="12" y1="7.5" x2="12" y2="13.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="12" cy="16.8" r="1.3" fill="currentColor"/>
       </symbol>
 
       <symbol id="icon-plate" viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"></circle>
-        <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"></circle>
+        <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/>
       </symbol>
     </defs>
   </svg>
@@ -2954,12 +2962,12 @@
   <!-- ============================================================
        PANTALLA 1 · SPLASH SCREEN
        ============================================================ -->
-  <main class="splash is-hidden" id="splash" aria-hidden="true">
+  <main class="splash is-waiting" id="splash">
 
-    <button class="lang-switch lang-switch--dark" type="button" data-lang-switch="" aria-label="Cambiar idioma / Change language">
-      <span data-lang-es="" class="lang-on">ES</span>
+    <button class="lang-switch lang-switch--dark" type="button" data-lang-switch aria-label="Cambiar idioma / Change language">
+      <span data-lang-es class="lang-on">ES</span>
       <span class="lang-sep">|</span>
-      <span data-lang-en="" class="lang-off">EN</span>
+      <span data-lang-en class="lang-off">EN</span>
     </button>
 
     <div class="embers" aria-hidden="true"></div>
@@ -2972,34 +2980,34 @@
       <p class="brand__hint" data-i18n="tapHint">Toca para comenzar</p>
 
       <h1 class="brand__title">La Piccola Argentina</h1>
-      <svg class="brand-engraving brand-engraving--fork" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11 2h-1v7c0 .55-.45 1-1 1s-1-.45-1-1V2H7v7c0 .55-.45 1-1 1s-1-.45-1-1V2H4v7c0 1.48 1.08 2.71 2.5 2.95V22h2V11.95C9.92 11.71 11 10.48 11 9V2z" transform="translate(6.5 0)"></path></svg>
-      <svg class="brand-engraving brand-engraving--knife" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2c-2.5 3.5-3 7.5-3 10 0 1.66 1.34 3 3 3V22h2V2h-2z" transform="translate(-1.5 0)"></path></svg>
-      <p class="brand__subtitle" data-i18n="subtitle">Cocina argentina e italiana</p>
+      <svg class="brand-engraving brand-engraving--fork" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11 2h-1v7c0 .55-.45 1-1 1s-1-.45-1-1V2H7v7c0 .55-.45 1-1 1s-1-.45-1-1V2H4v7c0 1.48 1.08 2.71 2.5 2.95V22h2V11.95C9.92 11.71 11 10.48 11 9V2z" transform="translate(6.5 0)"/></svg>
+      <svg class="brand-engraving brand-engraving--knife" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2c-2.5 3.5-3 7.5-3 10 0 1.66 1.34 3 3 3V22h2V2h-2z" transform="translate(-1.5 0)"/></svg>
+      <p class="brand__subtitle" data-i18n="subtitle">Sabores de Valencia</p>
       <address class="brand__address">Plaça de Colom, 11 · Torrent, Valencia</address>
     </header>
 
     <nav class="actions" aria-label="Acciones principales">
 
-      <button class="btn reveal reveal--left is-in" type="button" id="openMenuBtn">
+      <button class="btn reveal reveal--left" type="button" id="openMenuBtn">
         <svg aria-hidden="true"><use href="#icon-menu-card"></use></svg>
         <span data-i18n="viewMenu">Ver Carta</span>
       </button>
 
       <!-- Promociones del día (editables desde el modo edición) -->
-      <div class="promo-strip" id="promoStrip" aria-label="Promociones del día" style=""><p class="promo-strip__title">Promociones de hoy</p><div class="promo-card reveal reveal--right is-in" style="transition-delay: 0ms;"><div class="promo-card__media">🍽</div><div class="promo-card__body"><p class="promo-card__name">Cerveza Amstel</p><span class="promo-card__tag">Hoy sale con fritas genial !!!</span></div><span class="promo-card__price">3.10</span></div><div class="promo-card reveal reveal--right is-in" style="transition-delay: 110ms;"><div class="promo-card__media"><img src="./index_files/photo-1541544741938-0af808871cc0" alt="" loading="lazy"></div><div class="promo-card__body"><p class="promo-card__name">Jamón Ibérico de Bellota</p><span class="promo-card__tag">Elige tu café gratis</span></div><span class="promo-card__price">18€</span></div></div>
+      <div class="promo-strip" id="promoStrip" aria-label="Promociones del día"></div>
 
-      <a class="btn btn--whatsapp reveal reveal--right is-in" id="bookTableBtn" href="https://wa.me/34641174030?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20mesa%20en%20La%20Piccola%20Argentina.%20%C2%BFPodr%C3%ADan%20confirmarme%20disponibilidad%3F" rel="noopener" target="_blank">
+      <a class="btn btn--whatsapp reveal reveal--right" id="bookTableBtn" href="https://wa.me/34641174030" rel="noopener" target="_blank">
         <svg aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
         <span data-i18n="bookTable">Reservar Mesa</span>
       </a>
 
-      <button class="btn reveal reveal--right is-in" type="button" id="openLocationBtn">
-        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+      <button class="btn reveal reveal--right" type="button" id="openLocationBtn">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
         <span data-i18n="tabLocation">Ubicación</span>
       </button>
 
-      <button class="btn reveal reveal--right is-in" type="button" id="openAboutBtn" aria-expanded="false">
-        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+      <button class="btn reveal reveal--right" type="button" id="openAboutBtn" aria-expanded="false">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
         <span data-i18n="aboutBtn">Acerca de</span>
       </button>
 
@@ -3007,9 +3015,9 @@
       <div class="about-inline" id="aboutInline">
         <div class="about-inline__inner">
           <h2 class="about-inline__title" id="aboutTitle">Nuestra historia</h2>
-          <p class="about-inline__text" id="aboutText">La Piccola Argentina une dos cocinas hermanas: las empanadas, milanesas y parrilla de Argentina con las pastas frescas y pizzas de Italia. Un rincón familiar en Torrent donde cada plato se prepara como en casa. Te esperamos.</p>
+          <p class="about-inline__text" id="aboutText"></p>
           <h3 class="about-inline__subtitle" id="aboutTeamTitle">El ambiente</h3>
-          <div class="photo-grid" id="aboutPhotos"><div class="photo-grid__item"><img src="./index_files/photo-1517248135467-4c7edcad34c4" alt="La Piccola Argentina" loading="lazy"></div><div class="photo-grid__item"><img src="./index_files/photo-1414235077428-338989a2e8c0" alt="La Piccola Argentina" loading="lazy"></div><div class="photo-grid__item"><img src="./index_files/photo-1466978913421-dad2ebd01d17" alt="La Piccola Argentina" loading="lazy"></div><div class="photo-grid__item"><img src="./index_files/photo-1552566626-52f8b828add9" alt="La Piccola Argentina" loading="lazy"></div></div>
+          <div class="photo-grid" id="aboutPhotos"></div>
         </div>
       </div>
 
@@ -3020,7 +3028,7 @@
   <!-- ============================================================
        PANTALLA 2 · CARTA (papel crema premium)
        ============================================================ -->
-  <section class="menu-screen is-visible is-shown" id="menuScreen">
+  <section class="menu-screen" id="menuScreen" aria-hidden="true">
 
     <header class="menu-header">
       <div class="menu-header__brand">
@@ -3033,10 +3041,10 @@
         </span>
       </div>
 
-      <button class="lang-switch lang-switch--light" type="button" data-lang-switch="" aria-label="Cambiar idioma / Change language">
-        <span data-lang-es="" class="lang-on">ES</span>
+      <button class="lang-switch lang-switch--light" type="button" data-lang-switch aria-label="Cambiar idioma / Change language">
+        <span data-lang-es class="lang-on">ES</span>
         <span class="lang-sep">|</span>
-        <span data-lang-en="" class="lang-off">EN</span>
+        <span data-lang-en class="lang-off">EN</span>
       </button>
     </header>
 
@@ -3048,11 +3056,11 @@
 
       <button class="filter-btn" type="button" id="filterBtn" aria-haspopup="dialog" aria-expanded="false" aria-controls="filterSidebar" aria-label="Filtrar alérgenos">
         <svg aria-hidden="true"><use href="#icon-funnel"></use></svg>
-        <span class="filter-btn__badge" id="filterBadge" hidden="">0</span>
+        <span class="filter-btn__badge" id="filterBadge" hidden>0</span>
       </button>
     </div>
 
-    <nav class="categories" id="categoriesNav" aria-label="Categorías de la carta"><button type="button" class="category-chip" aria-pressed="false">Entrantes</button><button type="button" class="category-chip" aria-pressed="false">Empanadas</button><button type="button" class="category-chip" aria-pressed="false">Pastas</button><button type="button" class="category-chip" aria-pressed="false">Pizzas</button><button type="button" class="category-chip" aria-pressed="false">Milanesas</button><button type="button" class="category-chip" aria-pressed="false">Postres</button><button type="button" class="category-chip" aria-pressed="false">Bebidas</button><button type="button" class="category-chip" aria-pressed="false">Cervezas</button><button type="button" class="category-chip" aria-pressed="false">Cervezas de Barril</button><button type="button" class="category-chip is-active" aria-pressed="true">Cafés</button></nav>
+    <nav class="categories" id="categoriesNav" aria-label="Categorías de la carta"></nav>
 
     <!-- BANNER MENÚ DEL DÍA (L-V 13:00-16:30, oculto fuera de ese horario) -->
     <div class="mdday-banner" id="mddayBanner" style="display:none;" role="banner" aria-label="Menú del día disponible">
@@ -3073,7 +3081,7 @@
             <div class="mdday-dish__info">
               <p class="mdday-dish__name">Boquerones en Vinagre</p>
               <p class="mdday-dish__desc">Boquerón fresco, vinagre suave, ajo y perejil.</p>
-              <span class="mdday-dish__allergen">ⓘ Pescado</span>
+              <span class="mdday-dish__allergen">&#9432; Pescado</span>
             </div>
             <span class="mdday-dish__price">6,50 €</span>
           </div>
@@ -3082,7 +3090,7 @@
       <div class="mdday-banner__glow" aria-hidden="true"></div>
     </div>
 
-    <ul class="dish-list" id="dishList"><li class="dish-card" role="button" tabindex="0" data-dish-id="ca-solo" style="animation-delay: 0ms;"><div class="dish-placeholder" aria-hidden="true"><img class="dish-photo" src="./index_files/photo-1495474472287-4d71bcdd2085" alt="" loading="lazy"></div><div class="dish-card__body"><h3 class="dish-card__title"><span>Café solo</span></h3><p class="dish-card__desc"></p></div><div class="dish-card__side"><span class="dish-card__price">1,30 €</span></div></li><li class="dish-card" role="button" tabindex="0" data-dish-id="ca-tiempo" style="animation-delay: 50ms;"><div class="dish-placeholder" aria-hidden="true"><img class="dish-photo" src="./index_files/photo-1495474472287-4d71bcdd2085" alt="" loading="lazy"></div><div class="dish-card__body"><h3 class="dish-card__title"><span>Café del tiempo</span></h3><p class="dish-card__desc"></p></div><div class="dish-card__side"><span class="dish-card__price">1,40 €</span></div></li><li class="dish-card" role="button" tabindex="0" data-dish-id="ca-tocado" style="animation-delay: 100ms;"><div class="dish-placeholder" aria-hidden="true"><img class="dish-photo" src="./index_files/photo-1495474472287-4d71bcdd2085" alt="" loading="lazy"></div><div class="dish-card__body"><h3 class="dish-card__title"><span>Café tocado</span></h3><p class="dish-card__desc"></p></div><div class="dish-card__side"><span class="dish-card__price">1,40 €</span></div></li><li class="dish-card" role="button" tabindex="0" data-dish-id="ca-cortado" style="animation-delay: 150ms;"><div class="dish-placeholder" aria-hidden="true"><img class="dish-photo" src="./index_files/photo-1495474472287-4d71bcdd2085" alt="" loading="lazy"></div><div class="dish-card__body"><h3 class="dish-card__title"><span>Cortado</span></h3><p class="dish-card__desc"></p><div class="allergen-tags" aria-label="Alérgenos"><span class="allergen-tag tint-blue"><svg aria-hidden="true"><use href="#icon-allergen-dot"></use></svg><span>Lácteos</span></span></div></div><div class="dish-card__side"><span class="dish-card__price">1,50 €</span></div></li><li class="dish-card" role="button" tabindex="0" data-dish-id="ca-cortado-tiempo" style="animation-delay: 200ms;"><div class="dish-placeholder" aria-hidden="true"><img class="dish-photo" src="./index_files/photo-1495474472287-4d71bcdd2085" alt="" loading="lazy"></div><div class="dish-card__body"><h3 class="dish-card__title"><span>Cortado del tiempo</span></h3><p class="dish-card__desc"></p><div class="allergen-tags" aria-label="Alérgenos"><span class="allergen-tag tint-blue"><svg aria-hidden="true"><use href="#icon-allergen-dot"></use></svg><span>Lácteos</span></span></div></div><div class="dish-card__side"><span class="dish-card__price">1,60 €</span></div></li><li class="dish-card" role="button" tabindex="0" data-dish-id="ca-cortado-tocado" style="animation-delay: 250ms;"><div class="dish-placeholder" aria-hidden="true"><img class="dish-photo" src="./index_files/photo-1495474472287-4d71bcdd2085" alt="" loading="lazy"></div><div class="dish-card__body"><h3 class="dish-card__title"><span>Cortado tocado</span></h3><p class="dish-card__desc"></p><div class="allergen-tags" aria-label="Alérgenos"><span class="allergen-tag tint-blue"><svg aria-hidden="true"><use href="#icon-allergen-dot"></use></svg><span>Lácteos</span></span></div></div><div class="dish-card__side"><span class="dish-card__price">1,50 €</span></div></li><li class="dish-card" role="button" tabindex="0" data-dish-id="ca-bombon" style="animation-delay: 300ms;"><div class="dish-placeholder" aria-hidden="true"><img class="dish-photo" src="./index_files/photo-1495474472287-4d71bcdd2085" alt="" loading="lazy"></div><div class="dish-card__body"><h3 class="dish-card__title"><span>Bombón</span></h3><p class="dish-card__desc"></p><div class="allergen-tags" aria-label="Alérgenos"><span class="allergen-tag tint-blue"><svg aria-hidden="true"><use href="#icon-allergen-dot"></use></svg><span>Lácteos</span></span></div></div><div class="dish-card__side"><span class="dish-card__price">1,50 €</span></div></li><li class="dish-card" role="button" tabindex="0" data-dish-id="ca-bombon-tiempo" style="animation-delay: 350ms;"><div class="dish-placeholder" aria-hidden="true"><img class="dish-photo" src="./index_files/photo-1495474472287-4d71bcdd2085" alt="" loading="lazy"></div><div class="dish-card__body"><h3 class="dish-card__title"><span>Bombón tiempo</span></h3><p class="dish-card__desc"></p><div class="allergen-tags" aria-label="Alérgenos"><span class="allergen-tag tint-blue"><svg aria-hidden="true"><use href="#icon-allergen-dot"></use></svg><span>Lácteos</span></span></div></div><div class="dish-card__side"><span class="dish-card__price">1,60 €</span></div></li><li class="dish-card" role="button" tabindex="0" data-dish-id="ca-con-leche" style="animation-delay: 400ms;"><div class="dish-placeholder" aria-hidden="true"><img class="dish-photo" src="./index_files/photo-1495474472287-4d71bcdd2085" alt="" loading="lazy"></div><div class="dish-card__body"><h3 class="dish-card__title"><span>Café con leche</span></h3><p class="dish-card__desc"></p><div class="allergen-tags" aria-label="Alérgenos"><span class="allergen-tag tint-blue"><svg aria-hidden="true"><use href="#icon-allergen-dot"></use></svg><span>Lácteos</span></span></div></div><div class="dish-card__side"><span class="dish-card__price">1,80 €</span></div></li><li class="dish-card" role="button" tabindex="0" data-dish-id="ca-americano" style="animation-delay: 450ms;"><div class="dish-placeholder" aria-hidden="true"><img class="dish-photo" src="./index_files/photo-1495474472287-4d71bcdd2085" alt="" loading="lazy"></div><div class="dish-card__body"><h3 class="dish-card__title"><span>Americano</span></h3><p class="dish-card__desc"></p></div><div class="dish-card__side"><span class="dish-card__price">1,60 €</span></div></li><li class="dish-card" role="button" tabindex="0" data-dish-id="ca-americano-tocado" style="animation-delay: 500ms;"><div class="dish-placeholder" aria-hidden="true"><img class="dish-photo" src="./index_files/photo-1495474472287-4d71bcdd2085" alt="" loading="lazy"></div><div class="dish-card__body"><h3 class="dish-card__title"><span>Americano tocado / tiempo</span></h3><p class="dish-card__desc"></p></div><div class="dish-card__side"><span class="dish-card__price">1,70 €</span></div></li><li class="dish-card" role="button" tabindex="0" data-dish-id="ca-carajillo" style="animation-delay: 550ms;"><div class="dish-placeholder" aria-hidden="true"><img class="dish-photo" src="./index_files/photo-1495474472287-4d71bcdd2085" alt="" loading="lazy"></div><div class="dish-card__body"><h3 class="dish-card__title"><span>Carajillo</span></h3><p class="dish-card__desc"></p></div><div class="dish-card__side"><span class="dish-card__price">2,00 €</span></div></li><li class="dish-card" role="button" tabindex="0" data-dish-id="ca-carajillo-tiempo" style="animation-delay: 600ms;"><div class="dish-placeholder" aria-hidden="true"><img class="dish-photo" src="./index_files/photo-1495474472287-4d71bcdd2085" alt="" loading="lazy"></div><div class="dish-card__body"><h3 class="dish-card__title"><span>Carajillo tiempo</span></h3><p class="dish-card__desc"></p></div><div class="dish-card__side"><span class="dish-card__price">2,10 €</span></div></li><li class="dish-card" role="button" tabindex="0" data-dish-id="ca-carajillo-bailey" style="animation-delay: 650ms;"><div class="dish-placeholder" aria-hidden="true"><img class="dish-photo" src="./index_files/photo-1495474472287-4d71bcdd2085" alt="" loading="lazy"></div><div class="dish-card__body"><h3 class="dish-card__title"><span>Carajillo Bailey</span></h3><p class="dish-card__desc"></p><div class="allergen-tags" aria-label="Alérgenos"><span class="allergen-tag tint-blue"><svg aria-hidden="true"><use href="#icon-allergen-dot"></use></svg><span>Lácteos</span></span></div></div><div class="dish-card__side"><span class="dish-card__price">2,20 €</span></div></li><li class="dish-card" role="button" tabindex="0" data-dish-id="ca-infusiones" style="animation-delay: 700ms;"><div class="dish-placeholder" aria-hidden="true"><img class="dish-photo" src="./index_files/photo-1495474472287-4d71bcdd2085" alt="" loading="lazy"></div><div class="dish-card__body"><h3 class="dish-card__title"><span>Infusiones</span></h3><p class="dish-card__desc"></p></div><div class="dish-card__side"><span class="dish-card__price">1,40 €</span></div></li><li class="dish-card" role="button" tabindex="0" data-dish-id="ca-cremaet" style="animation-delay: 750ms;"><div class="dish-placeholder" aria-hidden="true"><img class="dish-photo" src="./index_files/photo-1495474472287-4d71bcdd2085" alt="" loading="lazy"></div><div class="dish-card__body"><h3 class="dish-card__title"><span>Cremaet</span></h3><p class="dish-card__desc"></p></div><div class="dish-card__side"><span class="dish-card__price">2,30 €</span></div></li><li class="dish-card" role="button" tabindex="0" data-dish-id="ca-colacao" style="animation-delay: 800ms;"><div class="dish-placeholder" aria-hidden="true"><img class="dish-photo" src="./index_files/photo-1495474472287-4d71bcdd2085" alt="" loading="lazy"></div><div class="dish-card__body"><h3 class="dish-card__title"><span>Colacao</span></h3><p class="dish-card__desc"></p><div class="allergen-tags" aria-label="Alérgenos"><span class="allergen-tag tint-blue"><svg aria-hidden="true"><use href="#icon-allergen-dot"></use></svg><span>Lácteos</span></span></div></div><div class="dish-card__side"><span class="dish-card__price">1,90 €</span></div></li></ul>
+    <ul class="dish-list" id="dishList"></ul>
 
   </section>
 
@@ -3093,15 +3101,15 @@
     <div class="page-inner">
       <h2 class="page-title" data-i18n="locTitle">Dónde estamos</h2>
       <div class="map-frame">
-        <iframe id="mapIframe" title="Mapa de La Piccola Argentina" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" src="./index_files/maps.html"></iframe>
+        <iframe id="mapIframe" title="Mapa de La Piccola Argentina" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
       </div>
       <div class="info-card">
         <p class="info-card__line"><strong data-i18n="locAddress">Dirección</strong><span>Plaça de Colom, 11 · 46900 Torrent, Valencia</span></p>
-        <div class="info-card__line"><strong data-i18n="locHours">Horario</strong><span id="hoursList"><span class="hours-row">Lunes, Martes y Jueves: Cerrado</span><span class="hours-row">Miércoles: 9:30 – 15:00 · 18:30 – 22:30</span><span class="hours-row">Viernes: 9:00 – 15:30 · 18:30 – 23:30</span><span class="hours-row">Sábado: 9:30 – 15:30 · 18:30 – 23:30</span><span class="hours-row">Domingo: 10:00 – 15:30</span></span></div>
-        <p class="info-card__line"><strong data-i18n="locPhone">Teléfono</strong><a id="phoneLink" href="tel:+34641174030">+34 641 174 030</a></p>
+        <div class="info-card__line"><strong data-i18n="locHours">Horario</strong><span id="hoursList"></span></div>
+        <p class="info-card__line"><strong data-i18n="locPhone">Teléfono</strong><a id="phoneLink" href="tel:+34641174030">+34 641 17 40 30</a></p>
       </div>
       <a class="cart-confirm-btn page-cta" id="locCallBtn" href="tel:+34641174030">
-        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         <span data-i18n="locCall">Llamar al bar</span>
       </a>
     </div>
@@ -3111,15 +3119,15 @@
     <!-- ============================================================
        PÍLDORA FLOTANTE (solo vive en la pantalla de la carta)
        ============================================================ -->
-  <nav class="floating-pill is-visible is-shown" id="floatingPill" aria-label="Contacto y redes sociales">
-    <a class="pill-link pill-link--whatsapp" id="pillWhatsapp" href="https://wa.me/34641174030?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20mesa%20en%20La%20Piccola%20Argentina.%20%C2%BFPodr%C3%ADan%20confirmarme%20disponibilidad%3F" rel="noopener" target="_blank" aria-label="WhatsApp">
+  <nav class="floating-pill" id="floatingPill" aria-label="Contacto y redes sociales" aria-hidden="true">
+    <a class="pill-link pill-link--whatsapp" id="pillWhatsapp" href="https://wa.me/34641174030" rel="noopener" target="_blank" aria-label="WhatsApp">
       <svg aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
     </a>
     <a class="pill-link pill-link--instagram" href="https://www.instagram.com/lapiccolaargentina" rel="noopener" target="_blank" aria-label="Instagram">
       <svg aria-hidden="true"><use href="#icon-instagram"></use></svg>
     </a>
-    <a class="pill-link pill-link--reviews" id="pillReviews" href="https://www.google.com/maps/place/La+Piccola+Argentina/@39.4369554,-0.465551,17z/data=!3m1!4b1!4m6!3m5!1s0xd60519466849e05:0x8b729578a31a5973!8m2!3d39.4369513!4d-0.4629761!16s%2Fg%2F11l36k50ky" rel="noopener" target="_blank" aria-label="Dejar reseña en Google">
-      <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+    <a class="pill-link pill-link--reviews" id="pillReviews" href="#" rel="noopener" target="_blank" aria-label="Dejar reseña en Google">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
     </a>
     <a class="pill-link pill-link--facebook" href="https://www.facebook.com/la.piccola.argentina" rel="noopener" target="_blank" aria-label="Facebook">
       <svg aria-hidden="true"><use href="#icon-facebook"></use></svg>
@@ -3129,7 +3137,7 @@
   <!-- ============================================================
        FAB DEL CARRITO (solo visible en la carta)
        ============================================================ -->
-  <button class="cart-fab is-shown" type="button" id="cartFab" aria-haspopup="dialog" aria-expanded="false" aria-controls="cartPanel" aria-label="Tu pedido">
+  <button class="cart-fab" type="button" id="cartFab" aria-haspopup="dialog" aria-expanded="false" aria-controls="cartPanel" aria-label="Tu pedido">
     <svg aria-hidden="true"><use href="#icon-bag"></use></svg>
     <span class="cart-fab__badge" id="cartBadge">0</span>
   </button>
@@ -3152,9 +3160,9 @@
 
     <p class="filter-sidebar__hint" data-i18n="filterHint">Marca un alérgeno para ocultar de la carta los platos que lo contienen.</p>
 
-    <ul class="filter-list" id="filterList"><li><label class="filter-option"><input type="checkbox" aria-label="Gluten"><span class="filter-option__box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span><span class="filter-option__dot dot-amber" aria-hidden="true"></span><span class="filter-option__label">Gluten</span></label></li><li><label class="filter-option"><input type="checkbox" aria-label="Crustáceos"><span class="filter-option__box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span><span class="filter-option__dot dot-teal" aria-hidden="true"></span><span class="filter-option__label">Crustáceos</span></label></li><li><label class="filter-option"><input type="checkbox" aria-label="Huevos"><span class="filter-option__box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span><span class="filter-option__dot dot-yellow" aria-hidden="true"></span><span class="filter-option__label">Huevos</span></label></li><li><label class="filter-option"><input type="checkbox" aria-label="Pescado"><span class="filter-option__box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span><span class="filter-option__dot dot-teal" aria-hidden="true"></span><span class="filter-option__label">Pescado</span></label></li><li><label class="filter-option"><input type="checkbox" aria-label="Cacahuetes"><span class="filter-option__box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span><span class="filter-option__dot dot-purple" aria-hidden="true"></span><span class="filter-option__label">Cacahuetes</span></label></li><li><label class="filter-option"><input type="checkbox" aria-label="Soja"><span class="filter-option__box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span><span class="filter-option__dot dot-brown" aria-hidden="true"></span><span class="filter-option__label">Soja</span></label></li><li><label class="filter-option"><input type="checkbox" aria-label="Lácteos"><span class="filter-option__box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span><span class="filter-option__dot dot-blue" aria-hidden="true"></span><span class="filter-option__label">Lácteos</span></label></li><li><label class="filter-option"><input type="checkbox" aria-label="Frutos de cáscara"><span class="filter-option__box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span><span class="filter-option__dot dot-purple" aria-hidden="true"></span><span class="filter-option__label">Frutos de cáscara</span></label></li><li><label class="filter-option"><input type="checkbox" aria-label="Apio"><span class="filter-option__box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span><span class="filter-option__dot dot-olive" aria-hidden="true"></span><span class="filter-option__label">Apio</span></label></li><li><label class="filter-option"><input type="checkbox" aria-label="Mostaza"><span class="filter-option__box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span><span class="filter-option__dot dot-red" aria-hidden="true"></span><span class="filter-option__label">Mostaza</span></label></li><li><label class="filter-option"><input type="checkbox" aria-label="Sésamo"><span class="filter-option__box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span><span class="filter-option__dot dot-brown" aria-hidden="true"></span><span class="filter-option__label">Sésamo</span></label></li><li><label class="filter-option"><input type="checkbox" aria-label="Sulfitos"><span class="filter-option__box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span><span class="filter-option__dot dot-red" aria-hidden="true"></span><span class="filter-option__label">Sulfitos</span></label></li><li><label class="filter-option"><input type="checkbox" aria-label="Altramuces"><span class="filter-option__box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span><span class="filter-option__dot dot-olive" aria-hidden="true"></span><span class="filter-option__label">Altramuces</span></label></li><li><label class="filter-option"><input type="checkbox" aria-label="Moluscos"><span class="filter-option__box" aria-hidden="true"><svg><use href="#icon-check"></use></svg></span><span class="filter-option__dot dot-green" aria-hidden="true"></span><span class="filter-option__label">Moluscos</span></label></li></ul>
+    <ul class="filter-list" id="filterList"></ul>
 
-    <button class="clear-filters-btn" type="button" id="clearFiltersBtn" disabled="">
+    <button class="clear-filters-btn" type="button" id="clearFiltersBtn" disabled>
       <svg aria-hidden="true"><use href="#icon-reset"></use></svg>
       <span data-i18n="clearFilters">Limpiar filtros</span>
     </button>
@@ -3178,7 +3186,7 @@
 
     <div class="cart-panel__scroll">
 
-      <div class="cart-empty" id="cartEmpty" style="display: block;">
+      <div class="cart-empty" id="cartEmpty">
         <svg aria-hidden="true"><use href="#icon-bag"></use></svg>
         <p data-i18n="cartEmpty">Tu pedido está vacío. Añade platos desde la carta.</p>
       </div>
@@ -3190,7 +3198,7 @@
         <span class="cart-total__value" id="cartTotalValue">0,00 €</span>
       </div>
 
-      <form class="cart-form" id="cartForm" novalidate="">
+      <form class="cart-form" id="cartForm" novalidate>
         <div class="cart-form__field">
           <label class="cart-form__label" for="fieldTable" data-i18n="fieldTable">Mesa o indicación (opcional)</label>
           <input class="cart-form__input" id="fieldTable" name="table" type="text" autocomplete="off">
@@ -3201,7 +3209,7 @@
           <span data-i18n="calcOnly">Solo calcular</span>
         </button>
 
-        <button class="cart-confirm-btn" type="submit" id="cartConfirmBtn" disabled="">
+        <button class="cart-confirm-btn" type="submit" id="cartConfirmBtn" disabled>
           <svg aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
           <span data-i18n="confirmOrder">Confirmar y Enviar a Cocina</span>
         </button>
@@ -3217,8 +3225,8 @@
 
     <div class="dish-modal__media">
       <div class="placeholder-frame" aria-hidden="true">
-        <span class="dish-emoji" id="modalEmoji" style="display: none;">🥩</span>
-        <img class="modal-photo" id="modalPhoto" alt="" style="" src="./index_files/photo-1544025162-d76694265947">
+        <span class="dish-emoji" id="modalEmoji">&#127869;</span>
+        <img class="modal-photo" id="modalPhoto" alt="" style="display:none;">
       </div>
       <button class="dish-modal__close" type="button" id="modalClose" aria-label="Cerrar">
         <svg aria-hidden="true"><use href="#icon-close"></use></svg>
@@ -3226,22 +3234,22 @@
     </div>
 
     <div class="dish-modal__body">
-      <span class="dish-modal__badge" id="modalBadge" hidden="">
+      <span class="dish-modal__badge" id="modalBadge" hidden>
         <svg aria-hidden="true"><use href="#icon-star"></use></svg>
         <span data-i18n="recommended">Recomendado</span>
       </span>
 
-      <h2 class="dish-modal__title" id="modalTitle">Choripán</h2>
+      <h2 class="dish-modal__title" id="modalTitle"></h2>
       <p class="dish-modal__desc" id="modalDesc"></p>
 
-      <div class="allergen-tags allergen-tags--modal" id="modalAllergens" style="display: flex;"><span class="allergen-tag tint-amber"><svg aria-hidden="true"><use href="#icon-allergen-dot"></use></svg><span>Gluten</span></span><span class="allergen-tag tint-blue"><svg aria-hidden="true"><use href="#icon-allergen-dot"></use></svg><span>Lácteos</span></span><span class="allergen-tag tint-brown"><svg aria-hidden="true"><use href="#icon-allergen-dot"></use></svg><span>Soja</span></span></div>
+      <div class="allergen-tags allergen-tags--modal" id="modalAllergens"></div>
 
       <div class="dish-modal__row">
-        <span class="dish-modal__price" id="modalPrice">11,00 €</span>
+        <span class="dish-modal__price" id="modalPrice"></span>
 
         <div class="qty-control" role="group" aria-label="Cantidad">
-          <button class="qty-btn" type="button" id="qtyMinus" aria-label="Quitar una unidad" disabled="">−</button>
-          <input class="qty-value" id="qtyValue" type="number" value="1" min="1" max="20" readonly="" aria-live="polite">
+          <button class="qty-btn" type="button" id="qtyMinus" aria-label="Quitar una unidad">&minus;</button>
+          <input class="qty-value" id="qtyValue" type="number" value="1" min="1" max="20" readonly aria-live="polite">
           <button class="qty-btn" type="button" id="qtyPlus" aria-label="Añadir una unidad">+</button>
         </div>
       </div>
@@ -3303,8 +3311,8 @@
   </script>
 
   <!-- Firebase (publicación en vivo del modo admin; si no carga, la carta funciona igual) -->
-  <script src="./index_files/firebase-app-compat.js.descarga"></script>
-  <script src="./index_files/firebase-database-compat.js.descarga"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js"></script>
 
   <script>
     (function () {
@@ -8143,6 +8151,5 @@
     })();
   </script>
 
-
-
-</body></html>
+</body>
+</html>

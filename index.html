@@ -3315,6 +3315,7 @@
   <!-- Firebase (publicación en vivo del modo admin; si no carga, la carta funciona igual) -->
   <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
 
   <script>
     (function () {
@@ -3358,6 +3359,8 @@
       /* === MODO ADMINISTRADOR (oculto) ============================
          Contraseña del hostelero: cámbiala aquí si lo necesitas. */
       var ADMIN_PASSWORD = "piccola1986";
+      /* Email del usuario de Firebase Authentication (panel de edición) */
+      var ADMIN_EMAIL = "admin@lapiccola.com";
 
       /* Credenciales Firebase (Realtime Database, europe-west1) */
       var FIREBASE_CONFIG = {
@@ -3624,7 +3627,6 @@
         },
         {
           "id": "patatas-cheddar",
-          "img": "assets/fotos/patatas-cheddar-bacon.jpg",
           "category": "entrantes",
           "price": 7.5,
           "recommended": false,
@@ -3644,7 +3646,6 @@
         },
         {
           "id": "chorizo-criollo",
-          "img": "assets/fotos/chorizo-criollo.jpg.jpeg",
           "category": "entrantes",
           "price": 11,
           "recommended": false,
@@ -3689,7 +3690,6 @@
         },
         {
           "id": "provolote",
-          "img": "assets/fotos/provolote.jpg",
           "category": "entrantes",
           "price": 10,
           "recommended": false,
@@ -3727,7 +3727,6 @@
         },
         {
           "id": "ensalada-caprese",
-          "img": "assets/fotos/ensalada-caprese.jpg",
           "category": "entrantes",
           "price": 6.5,
           "recommended": false,
@@ -3747,7 +3746,6 @@
         },
         {
           "id": "ensalada-cesar",
-          "img": "assets/fotos/ensalada-cesar.jpg.jpeg",
           "category": "entrantes",
           "price": 13,
           "recommended": false,
@@ -3832,7 +3830,6 @@
         },
         {
           "id": "croqueta-jamon",
-          "img": "assets/fotos/croqueta-jamon-serrano.jpg",
           "category": "entrantes",
           "price": 7.5,
           "recommended": false,
@@ -3875,7 +3872,6 @@
         },
         {
           "id": "tabla-fiambres",
-          "img": "assets/fotos/tabla-fiambres-quesos.jpg",
           "category": "entrantes",
           "price": 19,
           "recommended": false,
@@ -3916,7 +3912,6 @@
         },
         {
           "id": "emp-queso-cebolla",
-          "img": "assets/fotos/queso-cebolla-caramelizada.jpg",
           "category": "empanadas",
           "price": 2.7,
           "recommended": false,
@@ -3937,7 +3932,6 @@
         },
         {
           "id": "emp-humita",
-          "img": "assets/fotos/humita.jpg",
           "category": "empanadas",
           "price": 2.7,
           "recommended": false,
@@ -4058,7 +4052,6 @@
         },
         {
           "id": "emp-chef",
-          "img": "assets/fotos/empanada-del-chef.jpg",
           "category": "empanadas",
           "price": 3.3,
           "recommended": true,
@@ -4155,7 +4148,6 @@
         },
         {
           "id": "bucatini-bolognesa",
-          "img": "assets/fotos/bucatini-bolognesa.jpg",
           "category": "pastas",
           "price": 14,
           "recommended": false,
@@ -4322,7 +4314,6 @@
         },
         {
           "id": "pasta-marisco",
-          "img": "assets/fotos/pasta-marisco.jpg",
           "category": "pastas",
           "price": 18,
           "recommended": false,
@@ -4345,7 +4336,6 @@
         },
         {
           "id": "pz-margarita",
-          "img": "assets/fotos/pz-margarita.jpg",
           "category": "pizzas",
           "price": 12,
           "recommended": false,
@@ -4386,7 +4376,6 @@
         },
         {
           "id": "pz-cebolla",
-          "img": "assets/fotos/pz-cebolla.jpg",
           "category": "pizzas",
           "price": 13,
           "recommended": false,
@@ -4650,7 +4639,6 @@
         },
         {
           "id": "mil-cebolla-caramelizada",
-          "img": "assets/fotos/mil-cebolla-caramelizada.jpg",
           "category": "milanesas",
           "price": 16,
           "recommended": false,
@@ -4671,7 +4659,6 @@
         },
         {
           "id": "mil-caprese",
-          "img": "assets/fotos/mil-caprese.jpg",
           "category": "milanesas",
           "price": 16,
           "recommended": false,
@@ -4796,7 +4783,6 @@
         },
         {
           "id": "mil-sandwich-completo",
-          "img": "assets/fotos/mil-sandwich-completo.jpg",
           "category": "milanesas",
           "price": 18,
           "recommended": false,
@@ -4838,7 +4824,6 @@
         },
         {
           "id": "mil-choripan",
-          "img": "assets/fotos/mil-choripan.jpg",
           "category": "milanesas",
           "price": 11,
           "recommended": false,
@@ -4880,7 +4865,6 @@
         },
         {
           "id": "po-flan",
-          "img": "assets/fotos/po-flan.jpg",
           "category": "postres",
           "price": 5,
           "recommended": true,
@@ -4901,7 +4885,6 @@
         },
         {
           "id": "po-panacota",
-          "img": "assets/fotos/po-panacota.jpg",
           "category": "postres",
           "price": 5,
           "recommended": false,
@@ -4966,7 +4949,6 @@
         },
         {
           "id": "po-tiramisu",
-          "img": "assets/fotos/po-tiramisu.jpg",
           "category": "postres",
           "price": 6,
           "recommended": false,
@@ -4988,7 +4970,6 @@
         },
         {
           "id": "be-agua-peq",
-          "img": "assets/fotos/be-agua-peq.jpg",
           "category": "bebidas",
           "price": 1.8,
           "recommended": false,
@@ -5023,7 +5004,6 @@
         },
         {
           "id": "be-refrescos",
-          "img": "assets/fotos/be-refrescos.jpg",
           "category": "bebidas",
           "price": 2.5,
           "recommended": false,
@@ -5041,7 +5021,6 @@
         },
         {
           "id": "ap-ladron",
-          "img": "assets/fotos/ap-ladron.jpg",
           "category": "aperitivos",
           "price": 2.5,
           "recommended": false,
@@ -5059,7 +5038,6 @@
         },
         {
           "id": "ap-aperol",
-          "img": "assets/fotos/ap-aperol.jpg",
           "category": "aperitivos",
           "price": 8,
           "recommended": false,
@@ -5077,7 +5055,6 @@
         },
         {
           "id": "ap-fernet",
-          "img": "assets/fotos/ap-fernet.jpg",
           "category": "aperitivos",
           "price": 8,
           "recommended": false,
@@ -5095,7 +5072,6 @@
         },
         {
           "id": "cv-corona",
-          "img": "assets/fotos/cv-corona.jpg",
           "category": "cervezas",
           "price": 3,
           "recommended": false,
@@ -5134,7 +5110,6 @@
         },
         {
           "id": "cv-quilmes",
-          "img": "assets/fotos/cv-quilmes.jpg",
           "category": "cervezas",
           "price": 3,
           "recommended": false,
@@ -5173,7 +5148,6 @@
         },
         {
           "id": "cv-alhambra-reserva",
-          "img": "assets/fotos/cv-alhambra-reserva.jpg",
           "category": "cervezas",
           "price": 2.5,
           "recommended": false,
@@ -5193,7 +5167,6 @@
         },
         {
           "id": "cv-heineken",
-          "img": "assets/fotos/cv-heineken.jpg",
           "category": "cervezas",
           "price": 2,
           "recommended": false,
@@ -5213,7 +5186,6 @@
         },
         {
           "id": "cv-mahou",
-          "img": "assets/fotos/cv-mahou.jpg",
           "category": "cervezas",
           "price": 2,
           "recommended": false,
@@ -5250,7 +5222,6 @@
         },
         {
           "id": "cv-turia",
-          "img": "assets/fotos/cv-turia.jpg",
           "category": "cervezas",
           "price": 2.5,
           "recommended": false,
@@ -5958,8 +5929,8 @@
          tarjeta vuelve automáticamente al emoji. */
       /*__CATIMAGES_START__*/
       var CATEGORY_IMAGES = {
-        "entrantes": "",
-        "empanadas": "",
+        "entrantes": "https://images.unsplash.com/photo-1559737558-2f5a35f4523b?w=640&q=60&auto=format&fit=crop",
+        "empanadas": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=640&q=60&auto=format&fit=crop",
         "pastas": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=640&q=60&auto=format&fit=crop",
         "pizzas": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=640&q=60&auto=format&fit=crop",
         "milanesas": "https://images.unsplash.com/photo-1544025162-d76694265947?w=640&q=60&auto=format&fit=crop",
@@ -7208,7 +7179,7 @@
           if (typeof o.enLong === "string") { d.en.longDesc = o.enLong; }
           if (typeof o.price === "number" && isFinite(o.price)) { d.price = o.price; }
           if (typeof o.visible === "boolean") { d.visible = o.visible; }
-          if (typeof o.img === "string" && o.img !== "") { d.img = o.img; }
+          if (typeof o.img === "string") { d.img = o.img; }
           if (typeof o.category === "string") { d.category = o.category; }
           if (typeof o.recommended === "boolean") { d.recommended = o.recommended; }
           if (Object.prototype.toString.call(o.allergens) === "[object Array]") { d.allergens = o.allergens; }
@@ -7272,7 +7243,7 @@
           if (typeof o.enTag === "string") { p.en.tag = o.enTag; }
           if (typeof o.price === "string") { p.price = o.price; }
           if (typeof o.visible === "boolean") { p.visible = o.visible; }
-          if (typeof o.img === "string" && o.img !== "") { p.img = o.img; }
+          if (typeof o.img === "string") { p.img = o.img; }
           if (typeof o.emoji === "string") { p.emoji = o.emoji; }
         }
       }
@@ -7349,7 +7320,7 @@
           if (typeof o.es === "string") { c.es = o.es; }
           if (typeof o.en === "string") { c.en = o.en; }
           if (typeof o.emoji === "string" && o.emoji) { CATEGORY_ICONS[id] = o.emoji; }
-          if (typeof o.img === "string" && o.img !== "") { CATEGORY_IMAGES[id] = o.img; }
+          if (typeof o.img === "string") { CATEGORY_IMAGES[id] = o.img; }
         }
       }
 
@@ -7374,6 +7345,8 @@
           if (typeof firebase === "undefined") { return; }
           firebase.initializeApp(FIREBASE_CONFIG);
           ADMIN.db = firebase.database();
+          /* Autenticación del panel de edición (seguridad real en servidor) */
+          try { ADMIN.auth = firebase.auth(); } catch (eAuth) { ADMIN.auth = null; }
 
           /* Tiempo real: cualquier cambio publicado se aplica al instante,
              sin que el cliente tenga que recargar la página */
@@ -7478,14 +7451,54 @@
         });
 
         function tryEnter() {
-          if (input.value === ADMIN_PASSWORD) {
-            closeAdminLogin();
-            enterAdminMode();
-          } else {
-            error.textContent = "Contrase\u00f1a incorrecta";
-            input.value = "";
-            input.focus();
+          var clave = input.value;
+          if (!clave) { error.textContent = "Escribe la contrase\u00f1a"; return; }
+          error.textContent = "";
+
+          /* Sin Firebase disponible (sin conexión): se permite modo local con
+             la contraseña de respaldo, igual que antes. Los cambios quedan
+             solo en este dispositivo hasta que vuelva la conexión. */
+          if (!ADMIN.auth) {
+            if (clave === ADMIN_PASSWORD) {
+              closeAdminLogin();
+              enterAdminMode();
+            } else {
+              error.textContent = "Contrase\u00f1a incorrecta";
+              input.value = "";
+              input.focus();
+            }
+            return;
           }
+
+          var btnEnter = box.querySelector("#adminEnter");
+          btnEnter.disabled = true;
+          btnEnter.textContent = "Comprobando\u2026";
+
+          ADMIN.auth.signInWithEmailAndPassword(ADMIN_EMAIL, clave)
+            .then(function () {
+              closeAdminLogin();
+              enterAdminMode();
+            })
+            .catch(function (e) {
+              btnEnter.disabled = false;
+              btnEnter.textContent = "Entrar";
+              var code = (e && e.code) || "";
+              if (code === "auth/network-request-failed") {
+                /* Sin red: permitir modo local con la contraseña de respaldo */
+                if (clave === ADMIN_PASSWORD) {
+                  closeAdminLogin();
+                  enterAdminMode();
+                } else {
+                  error.textContent = "Sin conexi\u00f3n y contrase\u00f1a incorrecta";
+                }
+              } else if (code === "auth/too-many-requests") {
+                error.textContent = "Demasiados intentos. Prueba en unos minutos.";
+              } else {
+                error.textContent = "Contrase\u00f1a incorrecta";
+                input.value = "";
+                input.focus();
+              }
+            });
         }
 
         box.querySelector("#adminEnter").addEventListener("click", tryEnter);

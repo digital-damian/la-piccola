@@ -5955,23 +5955,22 @@
       };
       /*__CATICONS_END__*/
 
-      /* Fotos placeholder por categoría (banco libre Unsplash).
-         Se sustituyen por fotos reales añadiendo  img: "ruta.jpg"
-         a cada plato del catálogo. Si una foto no carga, la
-         tarjeta vuelve automáticamente al emoji. */
+      /* Sin fotos de stock: los platos sin foto propia muestran el
+         icono neutro de plato y cubiertos. Para poner foto real,
+         añadir  img: "assets/fotos/nombre.jpg"  al plato. */
       /*__CATIMAGES_START__*/
       var CATEGORY_IMAGES = {
         "entrantes": "",
         "empanadas": "",
-        "pastas": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=640&q=60&auto=format&fit=crop",
-        "pizzas": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=640&q=60&auto=format&fit=crop",
-        "milanesas": "https://images.unsplash.com/photo-1544025162-d76694265947?w=640&q=60&auto=format&fit=crop",
-        "postres": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=640&q=60&auto=format&fit=crop",
-        "bebidas": "https://images.unsplash.com/photo-1437418747212-8d9709afab22?w=640&q=60&auto=format&fit=crop",
-        "cervezas": "https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=640&q=60&auto=format&fit=crop",
-        "barril": "https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=640&q=60&auto=format&fit=crop",
-        "cafes": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=640&q=60&auto=format&fit=crop",
-        "aperitivos": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=640&q=60&auto=format&fit=crop"
+        "pastas": "",
+        "pizzas": "",
+        "milanesas": "",
+        "postres": "",
+        "bebidas": "",
+        "cervezas": "",
+        "barril": "",
+        "cafes": "",
+        "aperitivos": ""
       };
       /*__CATIMAGES_END__*/
 
@@ -5980,6 +5979,12 @@
       }
 
       function resolveDishIcon(dish) {
+        /* Icono único de plato y cubiertos para todos los platos sin
+           foto propia (decisión del cliente: aspecto uniforme).
+           Para volver a los iconos variados por plato, borrar la
+           línea siguiente. */
+        return "\uD83C\uDF7D";
+        /* eslint-disable no-unreachable */
         /* Nombre en ambos idiomas, en minúsculas, para blindar la búsqueda */
         var haystack = (dish.es.name + " " + dish.en.name).toLowerCase();
         var i, j;
